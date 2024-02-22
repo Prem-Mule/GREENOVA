@@ -1,0 +1,36 @@
+/* Styles for the map container */
+#map {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px; /* Add some spacing below the map */
+}
+
+/* Styles for the title */
+h1 {
+  text-align: center;
+  margin-top: 0; /* Remove default margin */
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+/* Styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px; /* Add padding to the body */
+  background-color: #080f5e;
+}
+
+/* Responsive styles for the map */
+@media (max-width: 768px) {
+  #map {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  #map {
+    height: 200px;
+  }
+}

@@ -1,0 +1,121 @@
+#announcement-panel {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#announcement-header,
+#announcement-subheader {
+	color: white;
+	background-color: rgba(38, 77, 0, 0.7);
+	padding: 5px;
+}
+
+#announcement-header {
+	font-size: 4em;
+}
+
+#announcement-subheader {
+	font-size: 2em;
+}
+
+
+
+
+
+
+#form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-group {
+	flex: 1 0 50%;
+	/* Two columns on larger screens */
+	margin-right: 20px;
+	/* Adjust spacing between form groups */
+}
+
+@media (max-width: 768px) {
+	.form-group {
+		flex: 1 0 100%;
+		/* One column on smaller screens */
+		margin-right: 0;
+		/* Remove margin for full width */
+		margin-bottom: 20px;
+		/* Add spacing between form groups */
+	}
+}
+
+
+/* .col-xs-12{
+	position: relative;
+	width: 50vw;
+}
+
+#form{
+	position: absolute;
+	left: 10px;
+} */
+#form,
+#results {
+	padding: 40px;
+}
+
+
+
+
+
+#announcement-panel {
+	background-image: url("../images/green-leaves.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#home-energy-label,
+.fa-home {
+	color: skyblue;
+	font-size: 2em;
+	margin-bottom: 20px;
+	margin-top: 6px;
+}
+
+#travel-label,
+.fa-globe {
+	color: skyblue;
+	font-size: 2em;
+	margin-bottom: 13px;
+	margin-top: 8px;
+
+}
+
+#waste-label,
+.fa-recycle {
+	color: skyblue;
+	font-size: 2em;
+	margin-bottom: 20px;
+	margin-top: 8px;
+
+}
+
+.progress-bar {
+	font-size: 1.2em;
+}
+
+.score-info {
+	padding: 10px;
+	margin: 0;
+}
+
+body {
+	background-color: #0b0444;
+	/* background-color: #5cb85c; */
+	 /* background: linear-gradient(to bottom, #379700 0vw, #5cb85c 40vw, rgb(42, 182, 0) 100vw); */
+}
+
+.help-block{
+	font-size: 0.7em;
+}
+.form-group{
+	font-size: 1.1em;
+}

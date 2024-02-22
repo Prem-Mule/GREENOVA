@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+
+}
+
+::selection {
+    background-color: #0b372dbb;
+}
+
+.logo {
+    width: 120px;
+    height: 26px;
+}
+
+header {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    /*auto gives margin at two ends left and right equally*/
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header ul {
+    display: flex;
+    /*for making items in it in one line*/
+    list-style: none;
+    align-items: center;
+    /*removes stretching of the elements*/
+}
+
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.search a {
+    font-size: 1.55rem;
+    padding: 0 2rem;
+}
+
+.hamburger a {
+    padding-left: 1.5rem;
+}
+
+.hamburger a {
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.034);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger .bar {
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before {
+    top: -4.5px;
+}
+
+.hamburger .bar::after {
+    top: 4.5px;
+}
+
+
+/* main section */
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+}
+
+.bg-img {
+    position: absolute;
+    width: 194.44%;
+    /*2800px is equivalent to it to make responsive we 2800/1440=1.9444*/
+    top: calc(50% - 48.14%);
+    /*390px is equivalent to it to make responsive we 390/810=0.4814*/
+    left: calc(50% + 0.6%);
+    /*10px is equivalent to it to make responsive we 10/1440=0.006*/
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.fog-7 {
+    position: absolute;
+    z-index: 2;
+    width: 131.9444%;
+    top: calc(50% - 12.34%);
+    left: calc(50% + 20.83%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-10 {
+    position: absolute;
+    z-index: 3;
+    width: 62.617%;
+    top: calc(50% + 8.52%);
+    left: calc(50% + 15.97%);
+    transform: translate(-50%, -50%);
+}
+
+.fog-6 {
+    position: absolute;
+    z-index: 4;
+    width: 111.8056%;
+    top: calc(50% + 10.49%);
+    left: calc(50% + 0.69%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-9 {
+    position: absolute;
+    z-index: 5;
+    width: 43.75%;
+    top: calc(50% + 13.83%);
+    left: calc(50% - 31.81%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-8 {
+    position: absolute;
+    z-index: 6;
+    width: 56.25%;
+    top: calc(50% + 10.62%);
+    left: calc(50% - 14.03%);
+    transform: translate(-50%, -50%);
+}
+
+.fog-5 {
+    position: absolute;
+    z-index: 7;
+    width: 31.25%;
+    top: calc(50% + 19.75%);
+    left: calc(50% + 1.39%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-7 {
+    position: absolute;
+    z-index: 8;
+    width: 28.3333%;
+    top: calc(50% + 7.4074%);
+    left: calc(50% + 20.8333%);
+    transform: translate(-50%, -50%);
+}
+
+/* text parallax */
+.text {
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 16.0494%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+.text h2 {
+    font-weight: 100;
+    font-size: 6.5rem;
+}
+
+.text h1 {
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+}
+
+.mountain-6 {
+    position: absolute;
+    z-index: 10;
+    width: 28.3333%;
+    top: calc(50% + 7.4074%);
+    left: calc(50% + 41.3194%);
+    transform: translate(-50%, -50%);
+}
+
+.fog-4 {
+    position: absolute;
+    z-index: 11;
+    width: 41.3194%;
+    top: calc(50% + 27.5309%);
+    left: calc(50% - 4.1667%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-5 {
+    position: absolute;
+    z-index: 12;
+    width: 43.4028%;
+    top: calc(50% + 30.8642%);
+    left: calc(50% + 9.0278%);
+    transform: translate(-50%, -50%);
+}
+
+.fog-3 {
+    position: absolute;
+    z-index: 13;
+    width: 111.1111%;
+    top: calc(50% + 13.5802%);
+    left: calc(50% - 1.0417%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-4 {
+    position: absolute;
+    z-index: 14;
+    width: 49.0278%;
+    top: calc(50% + 23.0247%);
+    left: calc(50% - 26.4583%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-3 {
+    position: absolute;
+    z-index: 15;
+    width: 31.3889%;
+    top: calc(50% + 12.2222%);
+    left: calc(50% + 52.0833%);
+    transform: translate(-50%, -50%);
+}
+
+.fog-2 {
+    position: absolute;
+    z-index: 16;
+    width: 108.3333%;
+    top: calc(50% + 18.1481%);
+    left: calc(50% - 2.0833%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-2 {
+    position: absolute;
+    z-index: 17;
+    width: 46.6667%;
+    top: calc(50% + 22.0988%);
+    left: calc(50% + 29.1667%);
+    transform: translate(-50%, -50%);
+}
+
+.mountain-1 {
+    position: absolute;
+    z-index: 18;
+    width: 41.3194%;
+    top: calc(50% + 10.7407%);
+    left: calc(50% - 43.125%);
+    transform: translate(-50%, -50%);
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 41.3194%;
+    pointer-events: none;
+
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+
+}
+
+.fog-1 {
+    position: absolute;
+    z-index: 21;
+    width: 111.1111%;
+    top: calc(100% - 43.8272%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vignette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.7));
+    /*vignette at four corners */
+    pointer-events: none;
+}
+
+
+  
+
+
+/* making responsive  */
+@media (max-width: 1100px) {
+    .text h1 {
+        font-size: 5.8rem;
+    }
+
+    .text h2 {
+        font-size: 4.7rem;
+    }
+}
+
+@media (max-width: 725px) {
+    .text h1 {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+
+    .text h2 {
+        font-size: 4.1rem;
+        line-height: 1.1;
+    }
+
+    header nav {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    header ul a {
+        font-size: 0.73rem;
+        padding: 0 0.9rem;
+    }
+
+    .search a {
+        font-size: 0.85rem;
+        padding: 0 1.8rem;
+    }
+
+    .hamburger {
+        padding-left: 0.9rem;
+    }
+
+    .hamburger a {
+        height: 30px;
+        width: 30px;
+    }
+
+    .bg-img {
+        width: initial;
+        height: 311.104%;
+        /* 194.44% * 1.6 */
+    }
+
+    .fog-7 {
+        width: initial;
+        height: 211.11104%;
+        /* 131.9444% * 1.6 */
+    }
+
+    .mountain-10 {
+        width: initial;
+        height: 100.1872%;
+        /* 62.617% * 1.6 */
+    }
+
+    .fog-6 {
+        width: initial;
+        height: 178.889%;
+        /* 111.8056% * 1.6 */
+    }
+
+    .mountain-9 {
+        width: initial;
+        height: 70%;
+        /* 43.75% * 1.6 */
+    }
+
+    .mountain-8 {
+        width: initial;
+        height: 90%;
+        /* 56.25% * 1.6 */
+    }
+
+    .fog-5 {
+        width: initial;
+        height: 50%;
+        /* 31.25% * 1.6 */
+    }
+
+    .mountain-7 {
+        width: initial;
+        height: 45.33328%;
+        /* 28.3333% * 1.6 */
+    }
+
+    .text {
+        width: initial;
+        height: 100%;
+        /* No change for 100% */
+    }
+
+    .mountain-6 {
+        width: initial;
+        height: 45.33328%;
+        /* 28.3333% * 1.6 */
+    }
+
+    .fog-4 {
+        width: initial;
+        height: 66.11104%;
+        /* 41.3194% * 1.6 */
+    }
+
+    .mountain-5 {
+        width: initial;
+        height: 69.44448%;
+        /* 43.4028% * 1.6 */
+    }
+
+    .fog-3 {
+        width: initial;
+        height: 177.77776%;
+        /* 111.1111% * 1.6 */
+    }
+
+    .mountain-4 {
+        width: initial;
+        height: 78.44448%;
+        /* 49.0278% * 1.6 */
+    }
+
+    .mountain-3 {
+        width: initial;
+        height: 50.22224%;
+        /* 31.3889% * 1.6 */
+    }
+
+    .fog-2 {
+        width: initial;
+        height: 173.33328%;
+        /* 108.3333% * 1.6 */
+    }
+
+    .mountain-2 {
+        width: initial;
+        height: 74.66672%;
+        /* 46.6667% * 1.6 */
+    }
+
+    .mountain-1 {
+        width: initial;
+        height: 66.11104%;
+        /* 41.3194% * 1.6 */
+    }
+
+    .sun-rays {
+        width: initial;
+        height: 66.11104%;
+        /* 41.3194% * 1.6 */
+    }
+
+    .black-shadow {
+        width: initial;
+        height: 160%;
+        /* 100% * 1.6 */
+    }
+
+    .fog-1 {
+        width: initial;
+        height: 177.77776%;
+        /* 111.1111% * 1.6 */
+    }
+
+    .vignette {
+        width: initial;
+        height: 160%;
+        /* 100% * 1.6 */
+    }
+
+
+}
+
+@media (max-width: 520px) {
+    .text h1 {
+        font-size: 3.3rem;
+        line-height: 1.1;
+    }
+
+    .text h2 {
+        font-size: 2.6rem;
+        line-height: 1.1;
+    }
+}
+
+
+
+
+/* navbar sticky css start */
+#header-wrapper {
+    width: 100%;
+}
+
+header#main-header {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header#main-header.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #111; /* Change to your desired background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.9s ease;
+}
+
+#header-placeholder {
+    height: 30px; /* Adjust to match the height of your header */
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/* navbar sticky css end */
+
+
+
+/* PAGE2 start */
+
+/* PAGE2 end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
